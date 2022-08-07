@@ -1,0 +1,274 @@
+body{
+	margin: 0;
+	padding: 0;
+	padding-top: 110px;
+	padding-bottom: 200px;
+	padding-left: 100px;
+	padding-right: 20px;
+	background-color:rgb(247, 255, 255);
+	animation: fade;
+	animation-duration: 3s;
+
+}
+
+@keyframes fade{
+	from{opacity: 0;};
+	to{opacity: 1;};
+}
+
+
+/* The class container contains the left, middle and the right header */
+
+
+.container{
+	height: 75px;
+	border-bottom: 1px solid gray;
+	display: flex;
+	justify-content: space-between;
+	/* justify-content: center; */
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: white;
+	z-index: 100;
+}
+
+			/* left-header
+We have the hamburger and the youtube logo */
+
+.left-header{
+	display: flex;
+}
+
+
+.ham-logo{
+	height: 30px;
+	margin-left: 20px;
+	cursor: pointer;
+}
+
+
+.youlogo{
+	height: 30px;
+	margin-left: 20px;
+	cursor: pointer;
+}
+
+/* 				middle-header
+We have anything that has to do with search-bar, the search and the voice icon  */
+
+.middle-header{
+	display: flex;
+	flex: 0.5;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+
+.search-bar{
+	flex: 1;
+	font-size: 16px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 8px;
+	width: 0;
+}
+
+
+.search-icon{
+	height: 26px;
+	margin-top: 3px;
+}
+
+.search-button{
+	height: 38px;
+	width: 60px;
+	margin-left: -1px;
+	cursor: pointer;
+}
+
+
+.voice-icon{
+	height: 20px;
+	margin-top: 3px;
+}
+
+.voice-button{
+	height: 38px;
+	width: 38px;
+	border-radius: 19px;
+	margin-left: 6px;
+	border: none;
+	cursor: pointer;
+}
+
+/* 				right-header
+Here we have the upload icon, youtube-app icon, notification icon, and the user's profile picture */
+
+.right-header{
+	display: flex;
+}
+
+
+.upload-icon{
+	height: 26px;
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+
+.you-app{
+	height: 26px;
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+
+.not-icon{
+	height: 26px;
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+.not{
+	position: relative;
+	cursor: pointer;
+}
+
+.not div{
+	position: absolute;
+	left: 12px;
+	top: 0;
+	height: 12px;
+	width: 12px;
+	background-color: rgb(207, 1, 1);
+	border: 1px solid white;
+	border-radius: 50%;
+	font-size: 10px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 6px;
+	color: white;
+}
+
+.user-icon{
+	height: 34px;
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+		/* side bar */
+
+
+.nav-side{
+	width: 80px;
+	height: 100%;
+	background-color: white;
+	position: fixed;
+	left: 0;
+	top: 65px;
+	z-index: 200;
+}
+
+/* The img-para means nav image + paragraph */
+
+.img-para{
+	height: 90px;
+	margin-top: 1px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.img-para:hover{
+	background-color: bisque;
+}
+
+/* The nav-img is the Home, Explore image etc */
+
+.nav-img{
+	width: 38px;
+}
+
+.img-para p{
+	font-size: 12px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+	/* main */
+
+main{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	row-gap: 20px;
+	column-gap: 10px;
+}
+
+/* The you-img-time means youtube image + time */
+
+.you-img-time{
+	position: relative;
+	/* border: 1px solid red; */
+}
+
+.you-img-time p{
+	position: absolute;
+	right: 0;
+	bottom: 5px;
+	padding-right: 6px;
+	padding-left: 6px;
+	margin-right: 5px;
+	margin-bottom: 2px;
+	background-color: black;
+	color: white;
+	font-size: 16px;
+	border-radius: 3px;
+}
+
+.thumbnail{
+	width: 100%;
+	transition: all 1s ease-out
+}
+
+.thumbnail:hover{
+	width: 103%;
+}
+
+.youtube-detail{
+	display: flex;
+}
+
+.youtube-icon{
+	width: 40px;
+	border-radius: 20px;
+}
+
+/* you-para = youtube paragraph */
+
+.you-para{
+	margin-left: 15px;
+}
+
+/* vid-title = video title */
+
+.vid-title{
+	margin-top: 0;
+}
+
+/* tuber-name = youtuber's name
+
+vid-det = video detail */
+
+.tuber-name, .vid-det, a{
+	margin-top: 0;
+	margin-bottom: 4px;
+	font-size: 13px;
+	color: gray;
+	text-decoration: none;
+}
+
